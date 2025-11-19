@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppRedSocial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26e6eac4523b68cac3f353d7528b648d03ae7215")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppRedSocial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppRedSocial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\AppRedSocial\\AppRedSocial\\AppRedSocial.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\ProyectoRedSocial\\AppRedSocial\\AppRedSocial.csproj",
       "projectName": "AppRedSocial",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\AppRedSocial\\AppRedSocial\\AppRedSocial.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\ProyectoRedSocial\\AppRedSocial\\AppRedSocial.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\AppRedSocial\\AppRedSocial\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\ProyectoRedSocial\\AppRedSocial\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
