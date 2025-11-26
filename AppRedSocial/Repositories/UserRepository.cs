@@ -1,5 +1,6 @@
 ﻿using AppRedSocial.Data;
 using AppRedSocial.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AppRedSocial.Repositories
 {

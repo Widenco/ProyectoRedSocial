@@ -1,5 +1,6 @@
 ﻿using AppRedSocial.Data;
 using AppRedSocial.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AppRedSocial.Repositories
 {
@@ -21,7 +22,7 @@ namespace AppRedSocial.Repositories
             return await _context.Posts.FirstOrDefaultAsync(p=>p.PostId== id);
         }
 
-        public Task<Post> GetPostByUserAsync(User user)
+        public async Task<Post> GetPostByUserAsync(User user)
         {
             return await _context.Posts.FirstOrDefaultAsync(p=>p.UserId== user.Id);
         }
