@@ -7,7 +7,8 @@ namespace AppRedSocial.Repositories
     {
         public Task<Comment> AddCommentAsycn(Comment comment)
         {
-            throw new NotImplementedException();
+            var entry = await _context.Comments.AddAsync(comment);
+            return entry.Entity;
         }
 
         public Task<bool> DeleteCommentAsycn(Comment comment)
@@ -17,12 +18,12 @@ namespace AppRedSocial.Repositories
 
         public Task<Comment> GetCommentById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Users.FirstOrDefaultAsync(c=>c.CommentId== id);
         }
 
         public Task<Comment> GetCommentByUserAsycn(User user)
         {
-            throw new NotImplementedException();
+            return await _context.Users.Include(u=> u.Role).FirstOrDefaultAsync(c=>c.UserId = user.Id);
         }
 
         public Task<Comment> UpdateCommentAsycn(Comment comment, User user)

@@ -5,9 +5,10 @@ namespace AppRedSocial.Repositories
 {
     public class PostRepository(AppDbContext _context) : IPostRepository
     {
-        public Task<Post> AddPostAsync(Post post)
+        public async Task<Post> AddPostAsync(Post post)
         {
-            throw new NotImplementedException();
+            var entry = await _context.Posts.AddAsync(post);
+            return entry.Entity;
         }
 
         public Task<bool> DeletePostAsync(Post post)
@@ -15,14 +16,14 @@ namespace AppRedSocial.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Post> GetPostByIdAsync(int id)
+        public async Task<Post> GetPostByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Posts.FirstOrDefaultAsync(p=>p.PostId== id);
         }
 
         public Task<Post> GetPostByUserAsync(User user)
         {
-            throw new NotImplementedException();
+            return await _context.Posts.FirstOrDefaultAsync(p=>p.UserId== user.Id);
         }
 
         public Task<Post> UpdatePostAsync(Post post)

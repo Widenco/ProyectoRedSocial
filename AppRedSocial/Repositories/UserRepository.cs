@@ -5,34 +5,34 @@ namespace AppRedSocial.Repositories
 {
     public class UserRepository(AppDbContext _context) : IUserRepository
     {
-        public Task<User> AddAsync(User user)
+        public async Task<User> AddAsync(User user)
         {
-            throw new NotImplementedException();
+            var entry= await _context.Users.AddAsync(user);
+            return entry.Entity;
         }
 
-        public Task<User?> GetUserByEmail(string email)
+        public async Task<User?> GetUserByEmail(string email)
         {
-            throw new NotImplementedException();
+            return await _context.Users.Include(u=>u.Role).FirstOrDefaultAsync(u=>u.Email== email);
         }
 
-        public Task<User?> GetUserByRefreshTokenAsync(string refreshToken)
+        public async Task <User?> GetUserByUserName(string userName)                                                                                   
         {
-            throw new NotImplementedException();
+            return await _context.Users.Include(u => u.Role).FirstOrDefaultAsync(u => u.UserName == userName);
         }
 
-        public Task<User?> GetUserByUserName(string userName)
+        public bool ValidatePassWord(User user, string passaWord)
         {
-            throw new NotImplementedException();
+            return BCrypt.Net.BCrypt.EnhancedVerify(passaWord, user.Password);
         }
-
-        public Task SaveAsync()
+        public async Task SaveAsync()
         {
-            throw new NotImplementedException();
+            await _context.SaveChangesAsync();
         }
-
-        public bool ValidatePassWord(User user, string passWord)
+        public async Task<User?> GetUserByRefreshTokenAsync(string refreshToken)
         {
-            throw new NotImplementedException();
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
         }
     }
 }
