@@ -4,10 +4,11 @@ namespace AppRedSocial.Repositories
 {
     public interface IPostRepository
     {
-        Task<Post> AddPostAsync(Post post);
-        Task<Post> UpdatePostAsync(Post post);
-        Task<bool> DeletePostAsync(Post post);    
-        Task<Post> GetPostByIdAsync(int id);
-        Task<Post> GetPostByUserAsync(User user);
+        Task AddPostAsync(Post post);
+        Task UpdatePostAsync(Post post);
+        Task DeletePostAsync(Post post);    
+        Task<Post?> GetPostByIdAsync(int id);
+        Task<IEnumerable<Post>> GetPostByUserAsync(int userId);
+        Task<IEnumerable<Post>> GetAllAsync();
     }
 }

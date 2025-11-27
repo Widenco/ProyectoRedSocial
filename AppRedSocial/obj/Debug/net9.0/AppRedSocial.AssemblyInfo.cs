@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppRedSocial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c32588faedb57931f7e8a3d64693a50d2b8877b")]
+=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13f73bf69096ae87c0f6b02d1944c599733d54b4")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("AppRedSocial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppRedSocial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

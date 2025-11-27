@@ -1,0 +1,10 @@
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.csproj.AssemblyReference.cache
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.AssemblyInfoInputs.cache
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.AssemblyInfo.cs
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.csproj.CoreCompileInputs.cache
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.RazorAssemblyInfo.cache
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.RazorAssemblyInfo.cs
+C:\Users\Denzell Connolly\source\repos\ProyectoRedSocial\AppRedSocial\obj\Debug\net9.0\AppRedSocial.sourcelink.json
